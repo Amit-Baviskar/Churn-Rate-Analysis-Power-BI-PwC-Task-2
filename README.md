@@ -20,7 +20,7 @@ Here’s a structure for your report, incorporating the insights from the churn 
 ---
 
 ### **1. Introduction**
-This report provides an analysis of customer churn for PhoneNow, a telecom company. The purpose of this report is to assist in identifying patterns and trends related to customer churn, helping to improve retention rates and understanding the key drivers behind customer departures. The analysis is presented through interactive dashboards displaying demographics, customer account details, and services subscribed to.
+This report provides an analysis of customer churn for PhoneNow, a telecom company. The purpose of this report is to assist in identifying patterns and trends related to customer churn, helping to improve retention rates, and understanding the key drivers behind customer departures. The analysis is presented through interactive dashboards displaying demographics, customer account details, and services subscribed to.
 
 ---
 
@@ -53,23 +53,29 @@ Data sources include:
 
 The following DAX formulas were used in the dashboards to model the data and generate insights:
 
-- **% of Dependents**:  
-    `= DIVIDE(CALCULATE(COUNT(Churn[Dependents]),Churn[Dependents]="Yes",Churn[Churn]="Yes"),CALCULATE(COUNT(Churn[Dependents]),Churn[Churn]="Yes"),0)`
+- **% of Dependents**:
+  
+          DIVIDE(CALCULATE(COUNT(Churn[Dependents]),Churn[Dependents]="Yes",Churn[Churn]="Yes"),CALCULATE(COUNT(Churn[Dependents]),Churn[Churn]="Yes"),0)
   
 - **% of Device Protection**:  
-  `= DIVIDE(CALCULATE(COUNT(Churn[DeviceProtection]),Churn[DeviceProtection]="Yes",Churn[Churn]="Yes"),CALCULATE(COUNT(Churn[DeviceProtection]),Churn[Churn]="Yes"),0)`
+
+           DIVIDE(CALCULATE(COUNT(Churn[DeviceProtection]),Churn[DeviceProtection]="Yes",Churn[Churn]="Yes"),CALCULATE(COUNT(Churn[DeviceProtection]),Churn[Churn]="Yes"),0)
   
 - **% of Online Backup**:  
-  `= DIVIDE(CALCULATE(COUNT(Churn[OnlineBackup]),Churn[OnlineBackup]="Yes",Churn[Churn]="Yes"),CALCULATE(COUNT(Churn[OnlineBackup]),Churn[Churn]="Yes"),0)`
+
+           DIVIDE(CALCULATE(COUNT(Churn[OnlineBackup]),Churn[OnlineBackup]="Yes",Churn[Churn]="Yes"),CALCULATE(COUNT(Churn[OnlineBackup]),Churn[Churn]="Yes"),0)
 
 - **Churn Rate**:  
-  `= DIVIDE(CALCULATE(COUNT(Churn[Churn]),Churn[Churn]="Yes"),(COUNT(Churn[Churn])))`
+
+          DIVIDE(CALCULATE(COUNT(Churn[Churn]),Churn[Churn]="Yes"),(COUNT(Churn[Churn])))
 
 - **% of Phone Service**:  
-  `= DIVIDE(CALCULATE(COUNT(Churn[PhoneService]),Churn[PhoneService]="Yes",Churn[Churn]="Yes"),CALCULATE(COUNT(Churn[PhoneService]),Churn[Churn]="Yes"),0)`
+
+           DIVIDE(CALCULATE(COUNT(Churn[PhoneService]),Churn[PhoneService]="Yes",Churn[Churn]="Yes"),CALCULATE(COUNT(Churn[PhoneService]),Churn[Churn]="Yes"),0)
 
 - **% of Senior Citizen**:  
-  `= DIVIDE(CALCULATE(COUNT(Churn[SeniorCitizen]),Churn[SeniorCitizen]=1,'Churn'[Churn] = "Yes"),CALCULATE(COUNT('Churn'[SeniorCitizen]),Churn[Churn]="Yes"),0)`
+
+           DIVIDE(CALCULATE(COUNT(Churn[SeniorCitizen]),Churn[SeniorCitizen]=1,'Churn'[Churn] = "Yes"),CALCULATE(COUNT('Churn'[SeniorCitizen]),Churn[Churn]="Yes"),0)
 
 ---
 
@@ -85,7 +91,7 @@ The following DAX formulas were used in the dashboards to model the data and gen
 
 3. **Services Subscribed**:
    - 69.4% of churned customers have fiber optic internet, with DSL and no internet service accounting for lower churn percentages.
-   - 91% of churned customers use phone service, and a high percentage also subscribe to streaming services and device protection.
+   - 91% of churned customers use phone services, and a high percentage also subscribe to streaming services and device protection.
 
 4. **Churn Rate by Tenure**:
    - Customers with less than one year of tenure have the highest churn rate (45.29%), indicating that early engagement strategies may be necessary to retain new customers.
