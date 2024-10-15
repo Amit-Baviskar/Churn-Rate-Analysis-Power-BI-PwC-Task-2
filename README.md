@@ -79,9 +79,11 @@ The following DAX formulas were used in the dashboards to model the data and gen
 ### **6. Dashboard** ### 
 
    ### Page 1: 
+   
    ![Churn 1](https://github.com/user-attachments/assets/4e9f49e9-a5c7-494e-ad2e-316bc8e974d5)
    
    ### Page 2: 
+   
    ![churn 2](https://github.com/user-attachments/assets/6bca6dee-b3eb-4321-bfbf-a58eca5accaa)
 
 ### **7. Insights**
