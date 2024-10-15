@@ -1,9 +1,5 @@
 # Churn-Rate-Analysis-Power-BI-PwC-Task-2
 
-Here’s a structure for your report, incorporating the insights from the churn dashboard, the DAX formulas, and the context you've provided:
-
----
-
 ### **Churn Analysis Report**
 
 ---
@@ -14,8 +10,9 @@ Here’s a structure for your report, incorporating the insights from the churn 
 3. **Stakeholders**
 4. **Data Preparation**
 5. **Data Modeling (DAX Formulas)**
-6. **Insights**
-7. **Conclusion**
+6. **Dashboard**
+7. **Insights**
+8. **Conclusion**
 
 ---
 
@@ -79,7 +76,7 @@ The following DAX formulas were used in the dashboards to model the data and gen
 
 ---
 
-### **6. Dashboard **
+### **6. Dashboard** ### 
 
    ### Page 1: 
    ![Churn 1](https://github.com/user-attachments/assets/4e9f49e9-a5c7-494e-ad2e-316bc8e974d5)
@@ -106,7 +103,7 @@ The following DAX formulas were used in the dashboards to model the data and gen
 
 ---
 
-### **7. Conclusion**
+### **8. Conclusion**
 The analysis reveals that churn is heavily influenced by contract type, payment method, and tenure. Month-to-month contracts and electronic check payments are associated with higher churn rates. Strategies such as offering better incentives for long-term contracts and promoting alternative payment methods may help reduce churn. Additionally, targeting new customers with tailored retention strategies could mitigate early churn.
 
 ---
