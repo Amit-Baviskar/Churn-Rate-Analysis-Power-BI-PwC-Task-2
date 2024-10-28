@@ -78,6 +78,10 @@ The following DAX formulas were used in the dashboards to model the data and gen
 
 ### **6. Dashboard** ### 
 
+   ### Dashboard :     
+    
+   ![Churn Analysis](https://github.com/user-attachments/assets/939f453a-d7b4-49ea-aaa5-1b394dd712d4)
+
    ### Page 1: 
    
    ![Churn 1](https://github.com/user-attachments/assets/4e9f49e9-a5c7-494e-ad2e-316bc8e974d5)
