@@ -52,27 +52,44 @@ The following DAX formulas were used in the dashboards to model the data and gen
 
 - **% of Dependents**:
   
-          DIVIDE(CALCULATE(COUNT(Churn[Dependents]),Churn[Dependents]="Yes",Churn[Churn]="Yes"),CALCULATE(COUNT(Churn[Dependents]),Churn[Churn]="Yes"),0)
+          DIVIDE(
+                 CALCULATE(COUNT(Churn[Dependents]),Churn[Dependents]="Yes",Churn[Churn]="Yes"),
+                 CALCULATE(COUNT(Churn[Dependents]),Churn[Churn]="Yes"),
+               0)
   
 - **% of Device Protection**:  
 
-           DIVIDE(CALCULATE(COUNT(Churn[DeviceProtection]),Churn[DeviceProtection]="Yes",Churn[Churn]="Yes"),CALCULATE(COUNT(Churn[DeviceProtection]),Churn[Churn]="Yes"),0)
+           DIVIDE(
+                 CALCULATE(COUNT(Churn[DeviceProtection]),Churn[DeviceProtection]="Yes",Churn[Churn]="Yes"),
+                 CALCULATE(COUNT(Churn[DeviceProtection]),Churn[Churn]="Yes")
+              ,0)
   
 - **% of Online Backup**:  
 
-           DIVIDE(CALCULATE(COUNT(Churn[OnlineBackup]),Churn[OnlineBackup]="Yes",Churn[Churn]="Yes"),CALCULATE(COUNT(Churn[OnlineBackup]),Churn[Churn]="Yes"),0)
+           DIVIDE(
+                 CALCULATE(COUNT(Churn[OnlineBackup]),Churn[OnlineBackup]="Yes",Churn[Churn]="Yes"),
+                 CALCULATE(COUNT(Churn[OnlineBackup]),Churn[Churn]="Yes")
+                 ,0)
 
 - **Churn Rate**:  
 
-          DIVIDE(CALCULATE(COUNT(Churn[Churn]),Churn[Churn]="Yes"),(COUNT(Churn[Churn])))
+          DIVIDE(
+                CALCULATE(COUNT(Churn[Churn]),Churn[Churn]="Yes"),
+                (COUNT(Churn[Churn])))
 
 - **% of Phone Service**:  
 
-           DIVIDE(CALCULATE(COUNT(Churn[PhoneService]),Churn[PhoneService]="Yes",Churn[Churn]="Yes"),CALCULATE(COUNT(Churn[PhoneService]),Churn[Churn]="Yes"),0)
+           DIVIDE(
+                  CALCULATE(COUNT(Churn[PhoneService]),Churn[PhoneService]="Yes",Churn[Churn]="Yes"),
+                  CALCULATE(COUNT(Churn[PhoneService]),Churn[Churn]="Yes")
+                 ,0)
 
 - **% of Senior Citizen**:  
 
-           DIVIDE(CALCULATE(COUNT(Churn[SeniorCitizen]),Churn[SeniorCitizen]=1,'Churn'[Churn] = "Yes"),CALCULATE(COUNT('Churn'[SeniorCitizen]),Churn[Churn]="Yes"),0)
+           DIVIDE(
+                 CALCULATE(COUNT(Churn[SeniorCitizen]),Churn[SeniorCitizen]=1,'Churn'[Churn] = "Yes"),
+                 CALCULATE(COUNT('Churn'[SeniorCitizen]),Churn[Churn]="Yes")
+                 ,0)
 
 ---
 
